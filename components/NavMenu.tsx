@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SignInButton } from "./Buttons";
 
 const NavMenu = () => {
     return(
@@ -8,15 +9,14 @@ const NavMenu = () => {
                 <li>
                     <Link href={'/about'}>About</Link>
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <Link href={'/blog'}>Blog</Link>
                 </li>
-            </ul>
-            <ul>
                 <li>
                     <Link href={'/users'}>Users</Link>
+                </li>
+                <li>
+                    <SignInButton />
                 </li>
             </ul>
         </nav>
